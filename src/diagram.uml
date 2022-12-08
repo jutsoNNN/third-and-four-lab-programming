@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="88.0" y="268.5">enums.Countries</node>
+    <node x="48.0" y="50.0">basicClasses.Labyrinth</node>
+    <node x="444.5" y="390.0">specificClasses.BuilderOfLabyrinth</node>
+    <node x="504.0" y="521.5">interfaces.CityActions</node>
+    <node x="313.5" y="291.0">specificClasses.Danfort</node>
+    <node x="-33.0" y="509.5">basicClasses.Civilizations</node>
+    <node x="938.0" y="141.0">basicClasses.City</node>
+    <node x="256.0" y="175.5">specificClasses.AncientMammal</node>
+    <node x="500.5" y="279.5">specificClasses.Reader</node>
+    <node x="-132.0" y="256.5">basicClasses.Building</node>
+    <node x="727.5" y="142.0">enums.Nouns</node>
+    <node x="752.5" y="379.0">enums.Adjectives</node>
+    <node x="720.5" y="-93.5">interfaces.PersonActions</node>
+    <node x="486.5" y="-116.0">specificClasses.Author</node>
+    <node x="243.0" y="412.5">interfaces.Walls</node>
+    <node x="1063.625" y="511.5">abstractClasses.Person</node>
+    <node x="331.0" y="-27.5">basicClasses.Landscape</node>
+    <node x="496.0" y="175.5">specificClasses.Dinosaur</node>
+    <node x="166.5" y="510.0">enums.LandscapeTypes</node>
+    <node x="280.0" y="61.0">mainFolder.Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="specificClasses.Author" target="abstractClasses.Person" relationship="GENERALIZATION">
+      <point x="89.5" y="15.0" />
+      <point x="683.0" y="14.5" />
+      <point x="683.0" y="255.5" />
+      <point x="484.0" y="255.5" />
+      <point x="484.0" y="362.5" />
+      <point x="427.0" y="362.5" />
+      <point x="427.0" y="627.0" />
+      <point x="-74.0" y="32.0" />
+    </edge>
+    <edge source="specificClasses.Reader" target="abstractClasses.Person" relationship="GENERALIZATION">
+      <point x="-75.5" y="0.0" />
+      <point x="484.0" y="318.0" />
+      <point x="484.0" y="362.5" />
+      <point x="427.0" y="362.5" />
+      <point x="427.0" y="627.0" />
+      <point x="-74.0" y="32.0" />
+    </edge>
+    <edge source="specificClasses.Author" target="interfaces.PersonActions" relationship="REALIZATION">
+      <point x="89.5" y="0.0" />
+      <point x="-89.5" y="0.0" />
+    </edge>
+    <edge source="specificClasses.BuilderOfLabyrinth" target="interfaces.CityActions" relationship="REALIZATION">
+      <point x="0.0" y="49.5" />
+      <point x="0.0" y="-38.0" />
+    </edge>
+    <edge source="specificClasses.Danfort" target="abstractClasses.Person" relationship="GENERALIZATION">
+      <point x="77.0" y="0.0" />
+      <point x="484.0" y="318.0" />
+      <point x="484.0" y="362.5" />
+      <point x="427.0" y="362.5" />
+      <point x="427.0" y="627.0" />
+      <point x="-74.0" y="32.0" />
+    </edge>
+    <edge source="specificClasses.BuilderOfLabyrinth" target="abstractClasses.Person" relationship="GENERALIZATION">
+      <point x="-116.0" y="-49.5" />
+      <point x="460.0" y="362.5" />
+      <point x="427.0" y="362.5" />
+      <point x="427.0" y="627.0" />
+      <point x="-74.0" y="32.0" />
+    </edge>
+    <edge source="basicClasses.Building" target="interfaces.Walls" relationship="REALIZATION">
+      <point x="0.0" y="61.5" />
+      <point x="-50.5" y="454.5" />
+      <point x="-81.5" y="15.0" />
+    </edge>
+    <edge source="basicClasses.Labyrinth" target="interfaces.Walls" relationship="REALIZATION">
+      <point x="-59.0" y="49.5" />
+      <point x="70.5" y="439.5" />
+      <point x="-81.5" y="0.0" />
+    </edge>
+    <edge source="basicClasses.City" target="interfaces.CityActions" relationship="REALIZATION">
+      <point x="0.0" y="61.5" />
+      <point x="1010.0" y="559.5" />
+      <point x="72.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="1.0" showDependencies="false" x="1137.625" y="595.0" />
+  <SelectedNodes>
+    <node>abstractClasses.Person</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
