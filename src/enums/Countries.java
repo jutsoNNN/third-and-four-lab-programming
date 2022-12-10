@@ -1,7 +1,15 @@
 package enums;
 
 public enum Countries {
-    Европа,
-    Азия,
-    Крит
+    EUROPE ("Европа"),
+    ASIA ("Азия"),
+    KRIT ("Крит");
+    private String mean;
+    Countries(String name) {
+        this.mean = name;
+    }
+    @Override
+    public String toString() {
+        return mean;
+    }
 }

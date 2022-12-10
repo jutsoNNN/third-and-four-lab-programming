@@ -11,6 +11,12 @@ public enum Adjectives {
     INHUMAN ("Нечеловеческая"),
     SENSITIVE ("чувствительный"),
     RECENTLY ("недавно"),
+    UNAMBIGUOUS ("Недвусмысленные"),
+    SCARY ("страшные"),
+    SIMPLE("простой"),
+    HUGE("огромный"),
+    CULTURAL("культурное"),
+    RELIGIOUS("религиозное"),
     STRONG ("сильное");
     private String mean;
     Adjectives(String name) {

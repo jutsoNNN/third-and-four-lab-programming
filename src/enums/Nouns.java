@@ -8,6 +8,8 @@ public enum Nouns {
     HUMAN ("человек"),
     REVELATIONS ("откровения"),
     BAS_RELIEFS ("барельефы"),
+    IMAGES ("изображения"),
+    SECRETS ("тайны"),
     DIZZINESS ("головокружение");
     private String mean;
     Nouns(String name) {

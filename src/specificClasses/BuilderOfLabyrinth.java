@@ -7,7 +7,7 @@ import interfaces.CityActions;
 
 public class BuilderOfLabyrinth extends Person implements CityActions {
     private boolean notHuman;
-    public String hand = " рука";
+    public static String hand = " рука";
     public static boolean labyrinthIsCreated = false;
     public BuilderOfLabyrinth(String name, int age, boolean notHuman) {
         super(name, age);

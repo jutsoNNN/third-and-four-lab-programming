@@ -3,89 +3,107 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="88.0" y="268.5">enums.Countries</node>
-    <node x="48.0" y="50.0">basicClasses.Labyrinth</node>
-    <node x="444.5" y="390.0">specificClasses.BuilderOfLabyrinth</node>
-    <node x="504.0" y="521.5">interfaces.CityActions</node>
-    <node x="313.5" y="291.0">specificClasses.Danfort</node>
-    <node x="-33.0" y="509.5">basicClasses.Civilizations</node>
-    <node x="938.0" y="141.0">basicClasses.City</node>
-    <node x="256.0" y="175.5">specificClasses.AncientMammal</node>
-    <node x="500.5" y="279.5">specificClasses.Reader</node>
-    <node x="-132.0" y="256.5">basicClasses.Building</node>
-    <node x="727.5" y="142.0">enums.Nouns</node>
-    <node x="752.5" y="379.0">enums.Adjectives</node>
-    <node x="720.5" y="-93.5">interfaces.PersonActions</node>
-    <node x="486.5" y="-116.0">specificClasses.Author</node>
-    <node x="243.0" y="412.5">interfaces.Walls</node>
-    <node x="1063.625" y="511.5">abstractClasses.Person</node>
-    <node x="331.0" y="-27.5">basicClasses.Landscape</node>
-    <node x="496.0" y="175.5">specificClasses.Dinosaur</node>
-    <node x="166.5" y="510.0">enums.LandscapeTypes</node>
-    <node x="280.0" y="61.0">mainFolder.Main</node>
+    <node x="344.5" y="59.0">mainFolder.Main</node>
+    <node x="414.0" y="242.5">interfaces.AnimalActions</node>
+    <node x="988.0" y="569.5">interfaces.CityActions</node>
+    <node x="-134.5" y="-29.0">specificClasses.Author</node>
+    <node x="613.5" y="763.5">specificClasses.Reader</node>
+    <node x="403.5" y="345.5">enums.Nouns</node>
+    <node x="808.0" y="488.0">basicClasses.City</node>
+    <node x="615.0" y="322.5">abstractClasses.Person</node>
+    <node x="1335.0" y="186.0">specificClasses.BuilderOfLabyrinth</node>
+    <node x="1037.5" y="37.0">enums.SomeTypesOfAnimals</node>
+    <node x="627.0" y="197.0">basicClasses.Labyrinth</node>
+    <node x="101.5" y="59.0">specificClasses.AncientMammal</node>
+    <node x="396.5" y="771.25">specificClasses.Danfort</node>
+    <node x="331.5" y="503.5">interfaces.PersonActions</node>
+    <node x="1026.5" y="278.5">basicClasses.Civilizations</node>
+    <node x="796.0" y="37.0">basicClasses.Images</node>
+    <node x="558.0" y="37.0">enums.Adjectives</node>
+    <node x="609.0" y="-127.75">specificClasses.Dinosaur</node>
+    <node x="801.0" y="367.5">abstractClasses.Animal</node>
+    <node x="560.5" y="547.0">enums.Countries</node>
+    <node x="808.0" y="208.0">basicClasses.Camp</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="basicClasses.Camp" target="interfaces.CityActions" relationship="REALIZATION">
+      <point x="72.0" y="0.0" />
+      <point x="993.0" y="269.5" />
+      <point x="993.0" y="551.0" />
+      <point x="1060.0" y="551.0" />
+      <point x="0.0" y="-38.0" />
+    </edge>
+    <edge source="specificClasses.Danfort" target="interfaces.PersonActions" relationship="REALIZATION">
+      <point x="-65.0" y="-115.5" />
+      <point x="0.0" y="104.0" />
+    </edge>
     <edge source="specificClasses.Author" target="abstractClasses.Person" relationship="GENERALIZATION">
-      <point x="89.5" y="15.0" />
-      <point x="683.0" y="14.5" />
-      <point x="683.0" y="255.5" />
-      <point x="484.0" y="255.5" />
-      <point x="484.0" y="362.5" />
-      <point x="427.0" y="362.5" />
-      <point x="427.0" y="627.0" />
-      <point x="-74.0" y="32.0" />
+      <point x="15.0" y="126.5" />
+      <point x="-30.0" y="328.0" />
+      <point x="-74.0" y="-78.0" />
     </edge>
     <edge source="specificClasses.Reader" target="abstractClasses.Person" relationship="GENERALIZATION">
-      <point x="-75.5" y="0.0" />
-      <point x="484.0" y="318.0" />
-      <point x="484.0" y="362.5" />
-      <point x="427.0" y="362.5" />
-      <point x="427.0" y="627.0" />
-      <point x="-74.0" y="32.0" />
+      <point x="75.5" y="0.0" />
+      <point x="782.0" y="802.0" />
+      <point x="782.0" y="421.0" />
+      <point x="74.0" y="15.0" />
+    </edge>
+    <edge source="specificClasses.Danfort" target="abstractClasses.Person" relationship="GENERALIZATION">
+      <point x="42.0" y="-115.5" />
+      <point x="528.0" y="484.0" />
+      <point x="-74.0" y="78.0" />
+    </edge>
+    <edge source="specificClasses.AncientMammal" target="abstractClasses.Animal" relationship="GENERALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="202.0" y="19.5" />
+      <point x="1008.0" y="19.5" />
+      <point x="1008.0" y="406.0" />
+      <point x="79.0" y="0.0" />
+    </edge>
+    <edge source="specificClasses.Dinosaur" target="abstractClasses.Animal" relationship="GENERALIZATION">
+      <point x="80.0" y="0.0" />
+      <point x="782.0" y="-78.25" />
+      <point x="782.0" y="406.0" />
+      <point x="-79.0" y="0.0" />
     </edge>
     <edge source="specificClasses.Author" target="interfaces.PersonActions" relationship="REALIZATION">
-      <point x="89.5" y="0.0" />
+      <point x="0.0" y="126.5" />
+      <point x="-45.0" y="607.5" />
       <point x="-89.5" y="0.0" />
     </edge>
     <edge source="specificClasses.BuilderOfLabyrinth" target="interfaces.CityActions" relationship="REALIZATION">
-      <point x="0.0" y="49.5" />
-      <point x="0.0" y="-38.0" />
-    </edge>
-    <edge source="specificClasses.Danfort" target="abstractClasses.Person" relationship="GENERALIZATION">
-      <point x="77.0" y="0.0" />
-      <point x="484.0" y="318.0" />
-      <point x="484.0" y="362.5" />
-      <point x="427.0" y="362.5" />
-      <point x="427.0" y="627.0" />
-      <point x="-74.0" y="32.0" />
-    </edge>
-    <edge source="specificClasses.BuilderOfLabyrinth" target="abstractClasses.Person" relationship="GENERALIZATION">
-      <point x="-116.0" y="-49.5" />
-      <point x="460.0" y="362.5" />
-      <point x="427.0" y="362.5" />
-      <point x="427.0" y="627.0" />
-      <point x="-74.0" y="32.0" />
-    </edge>
-    <edge source="basicClasses.Building" target="interfaces.Walls" relationship="REALIZATION">
-      <point x="0.0" y="61.5" />
-      <point x="-50.5" y="454.5" />
-      <point x="-81.5" y="15.0" />
-    </edge>
-    <edge source="basicClasses.Labyrinth" target="interfaces.Walls" relationship="REALIZATION">
-      <point x="-59.0" y="49.5" />
-      <point x="70.5" y="439.5" />
-      <point x="-81.5" y="0.0" />
-    </edge>
-    <edge source="basicClasses.City" target="interfaces.CityActions" relationship="REALIZATION">
-      <point x="0.0" y="61.5" />
-      <point x="1010.0" y="559.5" />
+      <point x="-15.0" y="49.5" />
+      <point x="1451.5" y="607.5" />
       <point x="72.0" y="0.0" />
     </edge>
+    <edge source="specificClasses.Dinosaur" target="interfaces.AnimalActions" relationship="REALIZATION">
+      <point x="-80.0" y="0.0" />
+      <point x="515.0" y="-78.25" />
+      <point x="29.0" y="-27.0" />
+    </edge>
+    <edge source="specificClasses.BuilderOfLabyrinth" target="abstractClasses.Person" relationship="GENERALIZATION">
+      <point x="0.0" y="49.5" />
+      <point x="1466.5" y="729.0" />
+      <point x="759.0" y="729.0" />
+      <point x="70.0" y="83.5" />
+    </edge>
+    <edge source="specificClasses.AncientMammal" target="interfaces.AnimalActions" relationship="REALIZATION">
+      <point x="0.0" y="38.5" />
+      <point x="202.0" y="269.5" />
+      <point x="-72.0" y="0.0" />
+    </edge>
+    <edge source="basicClasses.City" target="interfaces.CityActions" relationship="REALIZATION">
+      <point x="72.0" y="-3.0" />
+      <point x="993.0" y="546.5" />
+      <point x="993.0" y="551.0" />
+      <point x="1060.0" y="551.0" />
+      <point x="0.0" y="-38.0" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Compact" zoom="1.0" showDependencies="false" x="1137.625" y="595.0" />
+  <settings layout="Hierarchic Compact" zoom="1.0" showDependencies="false" x="689.0" y="802.0" />
   <SelectedNodes>
-    <node>abstractClasses.Person</node>
+    <node>specificClasses.Reader</node>
   </SelectedNodes>
   <Categories>
     <Category>Constructors</Category>

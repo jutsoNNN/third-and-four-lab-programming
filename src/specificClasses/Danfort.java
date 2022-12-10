@@ -7,6 +7,7 @@ import interfaces.PersonActions;
 public class Danfort extends Person implements PersonActions {
     public String name;
     public static boolean scared = false;
+    public boolean guessSmth = true;
     public boolean seeSmth = false;
     public Danfort(String name, int age) {
         super(name, age);
@@ -14,47 +15,33 @@ public class Danfort extends Person implements PersonActions {
 
     @Override
     public void think(String whereIs) {
-
+        //
     }
 
     @Override
     public void realize() {
-
+        if(guessSmth && Author.guessSmth){
+            System.out.println(this.getName() + " и напарник поняли, чья " + BuilderOfLabyrinth.hand + " построила этот город.");
+        }
     }
-
-    @Override
-    public void say() {
-
-    }
-
-    @Override
-    public void recognize() {
-
-    }
-
-    @Override
-    public void beAfraid() {
-
-    }
-
     @Override
     public void walk(String s, String n) {
-
+        //
     }
 
     @Override
     public void senses(String whereIs) {
-
+        //
     }
 
     @Override
-    public void see() {
-        if(scared){
-            System.out.println("К " + this.getName() + " и его напарник увидели "
+    public void see(String seeSmth) {
+        if(scared && seeSmth == "Посмотрел на стены"){
+            System.out.println(this.getName() + " и его напарник увидели "
                     + Nouns.REVELATIONS.toString() + " сошедшие к ним с покрытых резьбой стен.");
-            seeSmth = true;
+            this.seeSmth = true;
         }
-        if(seeSmth && Author.seeSmth){
+        if(this.seeSmth && Author.seeSmth){
 
         }
     }

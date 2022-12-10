@@ -1,7 +1,7 @@
 package abstractClasses;
 
 public abstract class Animal {
-    private String name;
+    protected String name;
     private int yearOld;
 
     public Animal(String name, int yearOld) {
