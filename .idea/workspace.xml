@@ -1,32 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0cf94b3-b8ce-4c7e-8d1b-ae1916b0828a" name="Changes" comment="comm 1">
-      <change afterPath="$PROJECT_DIR$/src/basicClasses/Images.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/SomeTypesOfAnimals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/AnimalActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/specificClasses/StrangeCreatures.java" afterDir="false" />
+    <list default="true" id="a0cf94b3-b8ce-4c7e-8d1b-ae1916b0828a" name="Changes" comment="comm 2">
+      <change afterPath="$PROJECT_DIR$/src/interfaces/AuthorActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/DanfortActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/abstractClasses/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abstractClasses/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicClasses/Building.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicClasses/Camp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicClasses/Camp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicClasses/Civilizations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicClasses/Civilizations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicClasses/Labyrinth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicClasses/Labyrinth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicClasses/Landscape.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/diagram.uml" beforeDir="false" afterPath="$PROJECT_DIR$/src/diagram.uml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/Adjectives.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/Adjectives.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/Countries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/Countries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/LandscapeTypes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/Nouns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/Nouns.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/PersonActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/PersonActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/Walls.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainFolder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainFolder/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/specificClasses/AncientMammal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/AncientMammal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/PersonActions.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/specificClasses/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/specificClasses/BuilderOfLabyrinth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/BuilderOfLabyrinth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/specificClasses/Danfort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/Danfort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/specificClasses/Dinosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/Dinosaur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/specificClasses/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/Reader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -63,7 +45,10 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jutson/IdeaProjects/progDopAnnotation&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jutson/IdeaProjects/progDopAnnotation&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -84,7 +69,10 @@
       <workItem from="1670520824201" duration="9664000" />
       <workItem from="1670576743977" duration="83000" />
       <workItem from="1670583329301" duration="17817000" />
-      <workItem from="1670659332353" duration="1807000" />
+      <workItem from="1670659332353" duration="1927000" />
+      <workItem from="1670661624317" duration="279000" />
+      <workItem from="1670662399678" duration="158000" />
+      <workItem from="1670666972843" duration="759000" />
     </task>
     <task id="LOCAL-00001" summary="comm 1">
       <created>1670541184982</created>
@@ -93,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670541184982</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="comm 2">
+      <created>1670661285680</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670661285680</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +108,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="comm 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="comm 1" />
+    <MESSAGE value="comm 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="comm 2" />
   </component>
 </project>

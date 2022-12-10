@@ -6,9 +6,9 @@ import basicClasses.City;
 import basicClasses.Images;
 import enums.Adjectives;
 import enums.Nouns;
-import interfaces.PersonActions;
+import interfaces.AuthorActions;
 
-public class Author extends Person implements PersonActions {
+public class Author extends Person implements AuthorActions {
     public static boolean guessSmth = false;
     private boolean headpain = false;
     public static boolean enterToCity = false;
@@ -68,7 +68,6 @@ public class Author extends Person implements PersonActions {
             }
         }
     }
-
     @Override
     public void see(String seeSmth) {
         if (seeSmth.equals("Увидел какие-то рисунки")) {

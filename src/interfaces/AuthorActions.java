@@ -1,6 +1,6 @@
 package interfaces;
 
-public interface PersonActions {
+public interface AuthorActions {
     void think(String whereIs);
     void realize();
     void walk(String s, String n);
