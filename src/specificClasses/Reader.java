@@ -4,17 +4,17 @@ import abstractClasses.Person;
 
 public class Reader extends Person {
 //  mindCondition (true - нормальное, false - ненормальное).
-    public static boolean mindCondition = true;
-    public static boolean guessSmth;
+    public boolean mindCondition = true;
+    public boolean guessSmth;
     public Reader(String name, int age) {
         super(name, age);
     }
+
     public void recognize(){
         System.out.println(this.getName() + " догадался, в чём тут дело...");
     }
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         final int PRIME = 31;
         int result = 1;
         result = PRIME * result + getAge();

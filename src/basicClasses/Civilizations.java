@@ -1,10 +1,10 @@
 package basicClasses;
 
 public class Civilizations {
-    String name;
-    String country;
-    String namePeople;
-    String totemAnimal;
+    private String name; //todo модификаторы!!!
+    private String country;
+    private String namePeople;
+    private String totemAnimal;
     public String getName() {
         return name;
     }
@@ -23,8 +23,6 @@ public class Civilizations {
         this.namePeople = namePeople;
         this.totemAnimal = totemAnimal;
     }
-//    минойская цивилизация на Крите использовала в качестве декоративного элемента
-//    священного быка, египетская -- скарабея, римская -- волчицу и орла, а дикие, первобытные племена -- разных тотемных животных.
     public void useAnimals(){
         System.out.println(this.getName() + " цивилизация использовала " + this.totemAnimal + " в качестве тотемного животного на своих знаках.");
     }

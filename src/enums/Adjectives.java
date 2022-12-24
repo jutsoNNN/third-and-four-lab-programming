@@ -17,6 +17,8 @@ public enum Adjectives {
     HUGE("огромный"),
     CULTURAL("культурное"),
     RELIGIOUS("религиозное"),
+    HIGH ("высокие"),
+    WINDOW ("оконные"),
     STRONG ("сильное");
     private String mean;
     Adjectives(String name) {

@@ -3,8 +3,8 @@ package basicClasses;
 import interfaces.CityActions;
 
 public class Camp implements CityActions {
-    public static String name;
-    public static boolean isCreated = false;
+    public String name;
+    public boolean isCreated = false;
 
     public String getName() {
         return name;

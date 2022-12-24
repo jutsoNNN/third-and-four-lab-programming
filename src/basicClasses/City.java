@@ -3,8 +3,7 @@ package basicClasses;
 import interfaces.CityActions;
 
 public class City implements CityActions{
-    public static String name;
-
+    public String name;
     public String getName() {
         return name;
     }

@@ -9,6 +9,7 @@ public class BuilderOfLabyrinth extends Person implements CityActions {
     private boolean notHuman;
     public static String hand = " рука";
     public static boolean labyrinthIsCreated = false;
+    private boolean enterToCity = false;
     public BuilderOfLabyrinth(String name, int age, boolean notHuman) {
         super(name, age);
         this.notHuman = notHuman;
@@ -21,11 +22,12 @@ public class BuilderOfLabyrinth extends Person implements CityActions {
     public void creatingLabyrinth(){
         if(notHuman){
             hand = Adjectives.INHUMAN.toString() + hand;
-            System.out.println(hand + " сложила этот " + Labyrinth.name + ".");
+            System.out.println(hand + " сложила этот лабиринт зданий.");
         }
         else{
             System.out.println("Город создан простыми людьми и в нём нет ничего страшного или странного.");
-            Author.enterToCity = false;
+            enterToCity = false;
+            System.exit(1);
         }
     }
 }

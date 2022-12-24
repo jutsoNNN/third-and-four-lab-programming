@@ -9,7 +9,7 @@ public class AncientMammal extends Animal implements AnimalActions {
         super(name, yearOld);
     }
     @Override
-    public void life() {
-        System.out.println(this.name + " жил в " + City.name);
+    public void life(String cityName) {
+        System.out.println(this.name + " жил в " + cityName);
     }
 }

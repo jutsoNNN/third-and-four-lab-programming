@@ -6,15 +6,17 @@ import interfaces.DanfortActions;
 
 public class Danfort extends Person implements DanfortActions {
     public String name;
-    public static boolean scared = false;
+    public boolean scared = false;
     public boolean guessSmth = true;
     public boolean seeSmth = false;
+    private boolean authorGuessSmth = true;
+    public boolean enterToCity = false;
     public Danfort(String name, int age) {
         super(name, age);
     }
     @Override
     public void realize() {
-        if(guessSmth && Author.guessSmth){
+        if(guessSmth && authorGuessSmth){
             System.out.println(this.getName() + " и напарник поняли, чья " + BuilderOfLabyrinth.hand + " построила этот город.");
         }
     }
@@ -24,9 +26,6 @@ public class Danfort extends Person implements DanfortActions {
             System.out.println(this.getName() + " и его напарник увидели "
                     + Nouns.REVELATIONS.toString() + " сошедшие к ним с покрытых резьбой стен.");
             this.seeSmth = true;
-        }
-        if(this.seeSmth && Author.seeSmth){
-
         }
     }
 }

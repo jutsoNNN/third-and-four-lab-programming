@@ -1,7 +1,6 @@
 package specificClasses;
 
 import abstractClasses.Person;
-import basicClasses.Camp;
 import basicClasses.City;
 import basicClasses.Images;
 import enums.Adjectives;
@@ -9,42 +8,38 @@ import enums.Nouns;
 import interfaces.AuthorActions;
 
 public class Author extends Person implements AuthorActions {
-    public static boolean guessSmth = false;
+    public boolean guessSmth = false;
     private boolean headpain = false;
-    public static boolean enterToCity = false;
+    public boolean enterToCity = false;
     private int helpInt = 0;
     public boolean scared = false;
-    public static boolean seeSmth = true;
+    public boolean seeSmth = true;
     public Author(String name, int age) {
         super(name, age);
     }
+
     public void say(String saying){
         System.out.println(saying);
     }
     @Override
     public void think(String whereIs) {
         if (headpain && whereIs.equals("После увиденного города") && helpInt == 2){
-            Reader.mindCondition = false;
             System.out.println(this.getName() + " подумал: \"" + Nouns.HUMAN.toString() + ", если он "
                     + Adjectives.SENSITIVE.toString() + ", получит " + Nouns.DIZZINESS.toString() + " здесь\".");
             helpInt += 1;
         }
-        if (whereIs.equals("Мысли о пережитом") && helpInt == 3 && Camp.isCreated){
+        if (whereIs.equals("Мысли о пережитом") && helpInt == 3){
             System.out.println(this.getName() + " и напарник пережили " + Adjectives.RECENTLY.toString()
-                    + " в " + Camp.name + " " + Adjectives.STRONG.toString() + " потрясение.");
-            this.scared = true;
-            Danfort.scared = true;
+                    + " в Лагерь " + Adjectives.STRONG.toString() + " потрясение.");
         }
-        this.scared = false;
-        Danfort.scared = false;
     }
 
     @Override
-    public void realize() {
+    public void realize(String cityName) {
         if ((enterToCity) && (!headpain) && (helpInt == 1)){
             headpain = true;
             String head = " кружится голова";
-            System.out.println("У " + this.getName() + head + " от того, что " + City.name + " был " + Adjectives.DESOLATE.toString() + ".");
+            System.out.println("У " + this.getName() + head + " от того, что " + cityName + " был " + Adjectives.DESOLATE.toString() + ".");
             helpInt += 1;
         }
     }
@@ -71,18 +66,13 @@ public class Author extends Person implements AuthorActions {
     @Override
     public void see(String seeSmth) {
         if (seeSmth.equals("Увидел какие-то рисунки")) {
-            Images.giveSmth();
             guessSmth = true;
         }
         if (seeSmth.equals("Рассматривает рисунки")){
             System.out.print(this.getName() + " увидел ");
             Images.visibility = true;
-            Images.imgFivePointed();
-            Images.describe();
         }
         if (seeSmth.equals("Смирились с реальностью")){
-            this.scared = true;
-            Danfort.scared = true;
             helpInt = 65;
             System.out.println("волосы встали дыбом.");
         }
