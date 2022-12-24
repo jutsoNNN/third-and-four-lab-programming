@@ -1,32 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0cf94b3-b8ce-4c7e-8d1b-ae1916b0828a" name="Changes" comment="comm 3, cut interfaces">
-      <change afterPath="$PROJECT_DIR$/src/abstractClasses/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/basicClasses/Airplane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/basicClasses/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/basicClasses/Stone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo" afterDir="false" />
+    <list default="true" id="a0cf94b3-b8ce-4c7e-8d1b-ae1916b0828a" name="Changes" comment="comm 4, add some classes, text was updated and modified, add sealed classes">
+      <change afterPath="$PROJECT_DIR$/src/interfaces/StrangeCreaturesActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/abstractClasses/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abstractClasses/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/abstractClasses/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abstractClasses/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicClasses/Camp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicClasses/Camp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicClasses/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicClasses/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicClasses/Civilizations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicClasses/Civilizations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicClasses/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicClasses/Images.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicClasses/Labyrinth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicClasses/Labyrinth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/diagram.uml" beforeDir="false" afterPath="$PROJECT_DIR$/src/diagram.uml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basicClasses/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicClasses/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/enums/Adjectives.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/Adjectives.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/AnimalActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/AnimalActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enums/Nouns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/Nouns.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interfaces/AuthorActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/AuthorActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/DanfortActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/DanfortActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainFolder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainFolder/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/specificClasses/AncientMammal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/AncientMammal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/specificClasses/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/specificClasses/BuilderOfLabyrinth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/BuilderOfLabyrinth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/specificClasses/Danfort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/Danfort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/specificClasses/Dinosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/Dinosaur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/specificClasses/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/Reader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/specificClasses/StrangeCreatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/StrangeCreatures.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,19 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jutson/IdeaProjects/progDopAnnotation&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/jutson/IdeaProjects/progDopAnnotation",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Clazz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="basicClasses.Clazz" />
@@ -117,7 +101,7 @@
       <workItem from="1670961919860" duration="594000" />
       <workItem from="1671751297632" duration="270000" />
       <workItem from="1671880512807" duration="1729000" />
-      <workItem from="1671889959272" duration="1356000" />
+      <workItem from="1671889959272" duration="9343000" />
     </task>
     <task id="LOCAL-00001" summary="comm 1">
       <created>1670541184982</created>
@@ -140,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670667759311</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="comm 4, add some classes, text was updated and modified, add sealed classes">
+      <created>1671892890282</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671892890282</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +153,7 @@
     <MESSAGE value="comm 1" />
     <MESSAGE value="comm 2" />
     <MESSAGE value="comm 3, cut interfaces" />
-    <option name="LAST_COMMIT_MESSAGE" value="comm 3, cut interfaces" />
+    <MESSAGE value="comm 4, add some classes, text was updated and modified, add sealed classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="comm 4, add some classes, text was updated and modified, add sealed classes" />
   </component>
 </project>

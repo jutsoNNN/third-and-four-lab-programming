@@ -17,9 +17,14 @@ public class Author extends Person implements AuthorActions {
     public Author(String name, int age) {
         super(name, age);
     }
-
-    public void say(String saying){
-        System.out.println(saying);
+    public void say(int number) {
+        if (number == 1) {
+            System.out.println("Как я уже говорил, в помещениях не было никакой мебели, хотя из настенных рисунков становилось ясно многое...");
+        }
+        if (number == 2) {
+            System.out.println("Например то, что в этих " + Adjectives.ECHOING + " , похожих на " + Nouns.CRYPT + " комнатах " +
+                    Adjectives.EARLIER +" находились вполне " + Adjectives.CERTAIN + " вещи, правда, непонятного для нас назначения.");
+        }
     }
     @Override
     public void think(String whereIs) {
@@ -75,6 +80,19 @@ public class Author extends Person implements AuthorActions {
         if (seeSmth.equals("Смирились с реальностью")){
             helpInt = 65;
             System.out.println("волосы встали дыбом.");
+        }
+        if (seeSmth.equals("Рассматривает комнату")) {
+            System.out.println("Немного " + Nouns.SAND + " с " + Nouns.DUST + " увидел " + this.getName());
+        }
+        if (seeSmth == "Нижние этажи") {
+            System.out.println("Ниже тьма сгущалась, а во многих" +
+                    " комнатах у самой земли почти ничего о не было видно - хоть глаз выколи.");
+        }
+    }
+    @Override
+    public void go(String whereGo) {
+        if (whereGo == "Вышли из здания") {
+            System.out.println(whereGo);
         }
     }
 }

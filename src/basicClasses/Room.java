@@ -30,7 +30,6 @@ public class Room {
                 if(random() < 0.5){
                     isEmpty = false;
                     System.out.println("В выемках в стенах лежали какие-то предметы.");
-
                 }
                 else{
                     System.out.println("В выемках в стенах ничего не лежало.");
@@ -56,10 +55,16 @@ public class Room {
         }
     }
     public class Ceiling{
-
+        protected boolean beMosaic = false;
+        protected void beUnusual(){
+            beMosaic = true;
+            System.out.println("Потолки ничем не выделялись, кроме того, что были из мозайки.");
+        }
     }
     public class Floor{
-
+        public void describe(){
+            System.out.println("На полах мозайка встречалась редко, в основном он был из " + Adjectives.ROUGH + " плитки.");
+        }
     }
     public class Trash{
 
@@ -74,5 +79,11 @@ public class Room {
         door.beOnTheSamePlace();
         window.brokenWindows();
         walls.getGeneratedThings();
+    }
+    public void getPicture2(){
+        Ceiling ceiling = new Ceiling();
+        Floor floor = new Floor();
+        ceiling.beUnusual();
+        floor.describe();
     }
 }

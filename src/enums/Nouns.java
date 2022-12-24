@@ -10,6 +10,9 @@ public enum Nouns {
     BAS_RELIEFS ("барельефы"),
     IMAGES ("изображения"),
     SECRETS ("тайны"),
+    CRYPT("склеп"),
+    DUST("пыль"),
+    SAND("песок"),
     DIZZINESS ("головокружение");
     private String mean;
     Nouns(String name) {

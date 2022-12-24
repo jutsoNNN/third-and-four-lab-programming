@@ -6,4 +6,5 @@ public interface AuthorActions {
     void walk(String s, String n);
     void senses(String whereIs);
     void see(String seeSmth);
+    void go(String whereGo);
 }
