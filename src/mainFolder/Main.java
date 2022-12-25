@@ -15,7 +15,6 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) throws NoSuchFieldException {
         Author author = new Author();
-        author.setName("Автор");
         try {
             author.setName("Автор");
             author.setAge(20);
