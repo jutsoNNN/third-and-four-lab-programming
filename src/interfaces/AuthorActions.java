@@ -7,4 +7,5 @@ public interface AuthorActions {
     void senses(String whereIs);
     void see(String seeSmth);
     void go(String whereGo);
+    void beInShock(String namePerson);
 }

@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NoSuchFieldException {
         Author author = new Author("Автор", 30);
         Reader reader = new Reader("Читатель", 20);
         Reader reader2 = new Reader("Читатель", 20);
@@ -15,6 +15,7 @@ public class Main {
         Images images = new Images("Мотив пятиконечия ");
         Labyrinth labyrinth = new Labyrinth();
         City city = new City("Древний город");
+        Airplane airplane = new Airplane(1999, "Самолёт");
         Room room = new Room();
         String cityName = city.getName();
         BuilderOfLabyrinth builderOfLabyrinth = new BuilderOfLabyrinth("Строитель лабиринта", 1000000, true);
@@ -74,6 +75,21 @@ public class Main {
         author.scared = true;
         danfort.scared = true;
         reader.recognize();
+        airplane.toFly();
+        dinosaur.beOnEarth();
+        strangeCreatures.beSmart();
+        if (camp.isCreated) {
+            strangeCreatures.createCity();
+        }
+        strangeCreatures.beCreatersOfLife();
+        strangeCreatures.comeToEarth();
+        strangeCreatures.describe("Плоть");
+        strangeCreatures.describe("Сила");
+        author.say(3);
+        author.beInShock(author.getName());
+        author.beInShock(danfort.getName());
+        author.see("Изображения в доме");
+        author.say(4);
         System.out.println("/---------------/ Сравнение /---------------/");
         System.out.println(reader.equals(reader2));
         Set readers = new HashSet();

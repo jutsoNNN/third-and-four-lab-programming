@@ -19,4 +19,8 @@ public class Dinosaur extends Animal implements AnimalActions {
     public void describe(){
 
     }
+    public void beOnEarth(){
+        System.out.println(this.name + " " + Adjectives.RECENTLY + " появились и жили на земле.");
+        System.out.println(this.name + " были глупы  молоды.");
+    }
 }

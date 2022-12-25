@@ -5,7 +5,7 @@ import enums.Nouns;
 import interfaces.DanfortActions;
 
 public class Danfort extends Person implements DanfortActions {
-    public String name;
+    public static String name;
     public boolean scared = false;
     public boolean guessSmth = true;
     public boolean seeSmth = false;

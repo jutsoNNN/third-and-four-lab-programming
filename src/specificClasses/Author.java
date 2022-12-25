@@ -17,13 +17,19 @@ public class Author extends Person implements AuthorActions {
     public Author(String name, int age) {
         super(name, age);
     }
-    public void say(int number) {
+    public void say(int number){
         if (number == 1) {
             System.out.println("Как я уже говорил, в помещениях не было никакой мебели, хотя из настенных рисунков становилось ясно многое...");
         }
         if (number == 2) {
             System.out.println("Например то, что в этих " + Adjectives.ECHOING + " , похожих на " + Nouns.CRYPT + " комнатах " +
                     Adjectives.EARLIER +" находились вполне " + Adjectives.CERTAIN + " вещи, правда, непонятного для нас назначения.");
+        }
+        if (number == 3){
+            System.out.println(this.getName() + " с напарником всего лишь сутки назад видели их члены, " + Adjectives.SEPARATED + " от тел.");
+        }
+        if (number == 4){
+            System.out.println(this.getName() + " посудил, что этому зданию не меньше 40 миллионов лет.");
         }
     }
     @Override
@@ -84,9 +90,12 @@ public class Author extends Person implements AuthorActions {
         if (seeSmth.equals("Рассматривает комнату")) {
             System.out.println("Немного " + Nouns.SAND + " с " + Nouns.DUST + " увидел " + this.getName());
         }
-        if (seeSmth == "Нижние этажи") {
+        if (seeSmth.equals("Нижние этажи")) {
             System.out.println("Ниже тьма сгущалась, а во многих" +
                     " комнатах у самой земли почти ничего о не было видно - хоть глаз выколи.");
+        }
+        if (seeSmth.equals("Изображения в доме")){
+            System.out.println(this.getName() + " по " + Adjectives.biological + ", " + Adjectives.geological + ", " + Adjectives.astronomical + " признакам посудил, что изображения принадлежали далёким временам.");
         }
     }
     @Override
@@ -94,5 +103,10 @@ public class Author extends Person implements AuthorActions {
         if (whereGo == "Вышли из здания") {
             System.out.println(whereGo);
         }
+    }
+
+    @Override
+    public void beInShock(String namePerson) {
+        System.out.println(namePerson + " испытал шок.");
     }
 }

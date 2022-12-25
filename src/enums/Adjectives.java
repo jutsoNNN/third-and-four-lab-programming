@@ -24,6 +24,12 @@ public enum Adjectives {
     ECHOING("гулкие"),
     CERTAIN("определенные"),
     EARLIER("ранее"),
+    SMART("умный"),
+    WISE("мудрый"),
+    SEPARATED("отделенный"),
+    geological("геологический"),
+    biological("биологический"),
+    astronomical("астрономический"),
     STRONG ("сильное");
     private String mean;
     Adjectives(String name) {
