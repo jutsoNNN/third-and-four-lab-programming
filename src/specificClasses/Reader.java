@@ -6,10 +6,6 @@ public class Reader extends Person {
 //  mindCondition (true - нормальное, false - ненормальное).
     public boolean mindCondition = true;
     public boolean guessSmth;
-    public Reader(String name, int age) {
-        super(name, age);
-    }
-
     public void recognize(){
         System.out.println(this.getName() + " догадался, в чём тут дело...");
     }

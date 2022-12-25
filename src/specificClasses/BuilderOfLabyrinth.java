@@ -10,8 +10,7 @@ public class BuilderOfLabyrinth extends Person implements CityActions {
     public static String hand = " рука";
     public static boolean labyrinthIsCreated = false;
     private boolean enterToCity = false;
-    public BuilderOfLabyrinth(String name, int age, boolean notHuman) {
-        super(name, age);
+    public BuilderOfLabyrinth(boolean notHuman) {
         this.notHuman = notHuman;
     }
     public void generating(){

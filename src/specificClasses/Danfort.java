@@ -11,9 +11,6 @@ public class Danfort extends Person implements DanfortActions {
     public boolean seeSmth = false;
     private boolean authorGuessSmth = true;
     public boolean enterToCity = false;
-    public Danfort(String name, int age) {
-        super(name, age);
-    }
     @Override
     public void realize() {
         if(guessSmth && authorGuessSmth){

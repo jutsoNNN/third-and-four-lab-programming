@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0cf94b3-b8ce-4c7e-8d1b-ae1916b0828a" name="Changes" comment="comm 5, intermediate, not important commit, add more actions from text">
+    <list default="true" id="a0cf94b3-b8ce-4c7e-8d1b-ae1916b0828a" name="Changes" comment="comm 6, semi-final commit. Done the text, need todo exceptions and show work of Reflection API">
+      <change afterPath="$PROJECT_DIR$/src/exception/AgeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exception/NameException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/Shockable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicClasses/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicClasses/Airplane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basicClasses/Stone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/Adjectives.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/Adjectives.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/AuthorActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/AuthorActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/StrangeCreaturesActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/StrangeCreaturesActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/abstractClasses/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/abstractClasses/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basicClasses/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicClasses/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainFolder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainFolder/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/specificClasses/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/specificClasses/BuilderOfLabyrinth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/BuilderOfLabyrinth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/specificClasses/Danfort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/Danfort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/specificClasses/Dinosaur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/Dinosaur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/specificClasses/StrangeCreatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/StrangeCreatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/specificClasses/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/specificClasses/Reader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +93,7 @@
       <workItem from="1671751297632" duration="270000" />
       <workItem from="1671880512807" duration="1729000" />
       <workItem from="1671889959272" duration="9469000" />
-      <workItem from="1671979752573" duration="4549000" />
+      <workItem from="1671979752573" duration="10765000" />
     </task>
     <task id="LOCAL-00001" summary="comm 1">
       <created>1670541184982</created>
@@ -130,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671920047706</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="comm 6, semi-final commit. Done the text, need todo exceptions and show work of Reflection API">
+      <created>1671985512216</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671985512216</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +162,7 @@
     <MESSAGE value="comm 4, add some classes, text was updated and modified, add sealed classes" />
     <MESSAGE value="comm 5, intermediate, not important commit" />
     <MESSAGE value="comm 5, intermediate, not important commit, add more actions from text" />
-    <option name="LAST_COMMIT_MESSAGE" value="comm 5, intermediate, not important commit, add more actions from text" />
+    <MESSAGE value="comm 6, semi-final commit. Done the text, need todo exceptions and show work of Reflection API" />
+    <option name="LAST_COMMIT_MESSAGE" value="comm 6, semi-final commit. Done the text, need todo exceptions and show work of Reflection API" />
   </component>
 </project>

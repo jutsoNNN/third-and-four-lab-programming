@@ -15,7 +15,7 @@ public class Room {
             System.out.println("Двери, спустя много лет, всё равно оставались на тех же местах.");
         }
     }
-    public class WoodBoards{
+    public static class WoodBoards{
         protected void liedOn(int howMany){
             if (howMany >= 2){
                 System.out.println("Деревянные доски лежали повсюду...");
@@ -65,9 +65,6 @@ public class Room {
         public void describe(){
             System.out.println("На полах мозайка встречалась редко, в основном он был из " + Adjectives.ROUGH + " плитки.");
         }
-    }
-    public class Trash{
-
     }
     public void getPicture(){
         Walls walls = new Walls();

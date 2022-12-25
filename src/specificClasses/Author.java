@@ -1,7 +1,6 @@
 package specificClasses;
 
 import abstractClasses.Person;
-import basicClasses.City;
 import basicClasses.Images;
 import enums.Adjectives;
 import enums.Nouns;
@@ -14,9 +13,6 @@ public class Author extends Person implements AuthorActions {
     private int helpInt = 0;
     public boolean scared = false;
     public boolean seeSmth = true;
-    public Author(String name, int age) {
-        super(name, age);
-    }
     public void say(int number){
         if (number == 1) {
             System.out.println("Как я уже говорил, в помещениях не было никакой мебели, хотя из настенных рисунков становилось ясно многое...");
@@ -56,8 +52,18 @@ public class Author extends Person implements AuthorActions {
     }
     @Override
     public void walk(String s, String n) {
-        System.out.println(this.getName() + " и " + s +" попадают в " + n);
         enterToCity = true;
+        class Location{
+            final String name;
+            public Location(String mean) {
+                this.name = mean;
+            }
+            public String getName() {
+                return name;
+            }
+        }
+        Location location = new Location("Древний город");
+        System.out.println(this.getName() + " и Данфорт попадают в " + location.name);
     }
     @Override
     public void senses(String whereIs) {

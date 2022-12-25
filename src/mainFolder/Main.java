@@ -1,26 +1,63 @@
 package mainFolder;
 
 import basicClasses.*;
+import exception.AgeException;
+import exception.NameException;
+import interfaces.CityActions;
+import interfaces.DanfortActions;
+import interfaces.Shockable;
 import specificClasses.*;
 
+import java.security.spec.RSAOtherPrimeInfo;
 import java.util.HashSet;
 import java.util.Set;
 
 public class Main {
     public static void main(String[] args) throws NoSuchFieldException {
-        Author author = new Author("Автор", 30);
-        Reader reader = new Reader("Читатель", 20);
-        Reader reader2 = new Reader("Читатель", 20);
-        Danfort danfort = new Danfort("Данфорт", 30);
+        Author author = new Author();
+        author.setName("Автор");
+        try {
+            author.setName("Автор");
+            author.setAge(20);
+        } catch (AgeException e) {
+            throw new RuntimeException(e);
+        }
+        Reader reader = new Reader();
+        try {
+            reader.setName("Читатель");
+            reader.setAge(20);
+        }catch (AgeException e){
+            throw  new RuntimeException(e);
+        }
+        Reader reader2 = new Reader();
+        try {
+            reader2.setName("Читатель");
+            reader2.setAge(20);
+        }catch (AgeException e){
+            throw  new RuntimeException(e);
+        }
+        Danfort danfort = new Danfort();
+        try {
+            danfort.setName("Данфорт");
+            danfort.setAge(30);
+        }catch (AgeException e){
+            throw  new RuntimeException(e);
+        }
         Images images = new Images("Мотив пятиконечия ");
         Labyrinth labyrinth = new Labyrinth();
         City city = new City("Древний город");
         Airplane airplane = new Airplane(1999, "Самолёт");
         Room room = new Room();
         String cityName = city.getName();
-        BuilderOfLabyrinth builderOfLabyrinth = new BuilderOfLabyrinth("Строитель лабиринта", 1000000, true);
+        BuilderOfLabyrinth builderOfLabyrinth = new BuilderOfLabyrinth(true);
+        try {
+            builderOfLabyrinth.setName("Строитель лабиринта");
+            builderOfLabyrinth.setAge(1000000000);
+        }catch (AgeException e){
+            throw  new RuntimeException(e);
+        }
         Camp camp = new Camp("Лагерь");
-        StrangeCreatures strangeCreatures = new StrangeCreatures("Странные древние существа",100000);
+        StrangeCreatures strangeCreatures = new StrangeCreatures("Странные древние существа",1000000000);
         Dinosaur dinosaur = new Dinosaur("Динозавр", 100000);
         AncientMammal ancientMammal = new AncientMammal("Древнее млекопитающее", 100000);
         Civilizations miioniyskaya = new Civilizations("Мийонийская", "Крит", "мийонийцы", "бык");
@@ -30,6 +67,12 @@ public class Main {
         city.generating();
         builderOfLabyrinth.generating();
         camp.generating();
+        Shockable shockable = new Shockable() {
+            @Override
+            public void beInShock(String namePerson) {
+                System.out.println(namePerson + " шокирован.");
+            }
+        };
         System.out.println("/---------------/ НАЧАЛО /---------------/");
         author.walk(danfort.getName(), city.getName());
         author.enterToCity = true;
@@ -86,8 +129,8 @@ public class Main {
         strangeCreatures.describe("Плоть");
         strangeCreatures.describe("Сила");
         author.say(3);
-        author.beInShock(author.getName());
-        author.beInShock(danfort.getName());
+        shockable.beInShock(author.getName());
+        shockable.beInShock(danfort.getName());
         author.see("Изображения в доме");
         author.say(4);
         System.out.println("/---------------/ Сравнение /---------------/");
